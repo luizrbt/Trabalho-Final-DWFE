@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* NavBar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    height: 120vh;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    background: #fff;
+}
+
+
+nav.sticky {
+    padding: 15px 20px;
+    background: #4070f4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+}
+
+nav.sticky .logo a {
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #0E2431;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4070f4;
+}
+
+nav.sticky .nav-links li a {
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links li a:hover {
+    color: #0E2431;
+}
+
+@media (max-width: 500px) {
+    nav {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    nav .nav-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav .logo a {
+      margin-bottom: 10px;
+    }
+  
+    .nav-content .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-content .nav-links li {
+      margin: 8px 0;
+    }
+  }
+
+/* Background */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+}
+
+section .air {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+}
+
+section .air.air1 {
+    animation: wave 30s linear infinite;
+    z-index: 0;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .air.air2 {
+    animation: wave2 15s linear infinite;
+    z-index: 0;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .air.air3 {
+    animation: wave 30s linear infinite;
+    z-index: 0;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .air.air4 {
+    animation: wave2 5s linear infinite;
+    z-index: 0;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/* Cards */
+
+.main-cards {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    height: 25vh;
+    width: 20vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card1 img {
+    width: 100%; 
+    height: 80%; 
+    border-radius: 10px; 
+}
+
+.card2 {
+    height: 25vh;
+    width: 20vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card2 img {
+    width: 100%; 
+    height: 80%; 
+    border-radius: 10px;
+}
+
+.card3 {
+    height: 25vh;
+    width: 20vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card3 img {
+    width: 100%; 
+    height: 80%; 
+    border-radius: 10px;
+}
+
+
+.card1, .card2, .card3, .card4{
+    margin: 10px;
+}
+
+/* Cards responsivos */
+
+@media (max-width: 1040px) {
+    .main-cards{
+        
+        position: relative;;
+    }
+    .card1, .card2, .card3, .card4{
+        margin: 10px;
+        position: relative;
+        z-index: 2;
+    }
+  }

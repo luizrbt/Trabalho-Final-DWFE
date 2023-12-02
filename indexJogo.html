@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CentroFlex - Jogo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styleJogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/panda-syntax.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
+  </head>
+  <body>
+    
+    <section id="sidebar">
+      <div class="header">
+        <div>
+        <h1 class="title">CentroFlex - Flexbol</h1>
+          <p>Posicione a bola na rede utilizando as propriedadades flex! 
+            Utilizando as propriedades justify-content, align-items ou flex-direction!</p>
+        </div>
+      </div>
+
+      <div id="editor">
+        <button id="next">Rodar</button>
+      </div>
+
+    </section>
+
+    <section id="view">
+      <h2 id="level">Nível 1</h2>
+      <div id="board">
+        <canvas id="campo" width="300" height="300">
+
+        </canvas>
+        <div id="background">
+        </div>
+      </div>
+      
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.js"></script>
+    <script src="scriptJogo.js"></script>
+  </body>
+</html>
